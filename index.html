@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio | Leonardo Gratti Volf</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects/styles/popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>LEONARDO GRATTI VOLF</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#sobre" class="nav-link active">SOBRE</a></li>
+                <li><a href="#habilidade" class="nav-link">HABILIDADES</a></li>
+                <li><a href="#projetos" class="nav-link">PROJETOS</a></li>
+                <li><a href="#contato" class="nav-link">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="sobre" class="section-sobre">
+        <div class="sobre-texto">
+            <h1>DESENVOLVEDOR FRONT-END</h1>
+            <p>Meu nome é Leonardo Gratti Volf. Sou formado em Análise e Desenvolvimento de Sistemas
+                pelo Instituto Federal de São Paulo (IFSP). Atuo como desenvolvedor de aplicações web,
+                com experiência em React.js no frontend e Java (Spring Boot) com PostgreSQL no backend.
+            </p>
+            <div class="curriculo">
+                <a href="./files/Curriculo_Leonardo Gratti Volf (10-2025).pdf" download="Leonardo-Gratti-Volf-CV.pdf">
+                    <button>Download CV</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="sobre-foto">
+            <img src="./image/perfil/Perfil-Leonardo.png" class="foto" alt="Foto do Leonardo">
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="habilidade" class="habilidades">
+        <h2>HABILIDADES</h2>
+        <p class="descricao">Linguagens e ferramentas que mais utilizo: </p>
+
+        <div class="icones-logotipo">
+            <div class="box" key="0"><p>HTML5</p><img src="image/logotipo/html.png" alt="html"></div>
+            <div class="box" key="1"><p>CSS</p><img src="image/logotipo/css.png" alt="css"></div>
+            <div class="box" key="2"><p>JavaScript</p><img src="image/logotipo/javascript.png" alt="javascript"></div>
+            <div class="box" key="3"><p>React</p><img src="image/logotipo/react.png" alt="react"></div>
+            <div class="box" key="4"><p>Node</p><img src="image/logotipo/node.png" alt="node"></div>
+            <div class="box" key="5"><p>Java</p><img src="image/logotipo/java.png" alt="java"></div>
+            <div class="box" key="6"><p>Spring Boot</p><img src="image/logotipo/spring.png" alt="spring"></div>
+            <div class="box" key="7"><p>PostgreSQL</p><img src="image/logotipo/postgresql.png" alt="postgresql"></div>
+            <div class="box" key="7"><p>Git</p><img src="image/logotipo/git.png" alt="git"></div>           
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="projetos" class="section-projetos">
+        <h2>PROJETOS</h2>
+
+        <div class="projeto-card">
+            <img src="projects/images/filme.png" alt="Projeto Filme">
+            <button class="btn-vermais" data-projeto="filmes">Ver mais</button>
+        </div>
+
+        <div class="projeto-card">
+            <img src="projects/images/brasil.png" alt="Projeto Tour">
+            <button class="btn-vermais" data-projeto="tour">Ver mais</button>
+        </div>
+
+        <div class="projeto-card">
+            <img src="projects/images/starbucks.png" alt="Projeto Starbucks">
+            <button class="btn-vermais" data-projeto="starbucks">Ver mais</button>mais
+        </div>
+    </section>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="fechar">&times;</span>
+            <div class="popup-esquerda">
+                <img id="popup-img" src="" alt="">
+            </div>
+            <div class="popup-direita">
+                <h2 id="popup-titulo" class="popup-titulo"></h2>
+
+                <p id="popup-descricao" class="popup-descricao"></p>
+
+                <h4 class="popup-funcionalidades">Principais funcionalidades:</h4>
+                <ul id="popup-funcionalidades" class="popup-lista-func"></ul>
+
+                <h4 class="popup-tecnologias">Tecnologias utilizadas:</h4>
+                <ul id="popup-tecnologias" class="popup-lista-tecn"></ul>
+            </div>
+
+            <div class="botao">
+                <button>
+                    <a id="link-github" href="#" target="_blank" rel="noopener noreferrer">Acessar GitHub</a>
+                </button>
+                <button>
+                    <a id="link-linkedin" href="#" target="_blank" rel="noopener noreferrer">Acessar Linkedln</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <section id="contato" class="contato">
+        <h2>CONTATO</h2>
+
+        <div class="contato-container">
+            <form id="form-contato" class="section-contato">
+                <label for="name">Nome:</label>
+                <input type="text" id="nome" required />
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required />
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" required></textarea>
+
+                <button type="submit">ENVIAR</button>
+            </form>
+            <p id="mensagem-sucesso"></p>
+
+            <div class="socialMedia-container">
+                <p class="socialMedia">SOCIAL MEDIA</p>
+                <div class="icones-social">
+                    <a href="https://www.linkedin.com/in/leonardograttivolf/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/LeoGratti" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/leonardovolf/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>© 2025 Leonardo Gratti Volf - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="projects/script/popup.js"></script>
+
+</body>
+
+</html>
