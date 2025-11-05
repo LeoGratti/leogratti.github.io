@@ -6,10 +6,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    /*background-color: #121212;*/
-    /*background: linear-gradient(360deg, #121212, #353542, transparent 150%);*/
     background: linear-gradient(rgb(1, 1, 1) 0%, rgb(24, 24, 24) 10%, rgb(39, 37, 37) 30%, rgb(27, 27, 26) 50%, rgb(32, 37, 42) 70%, rgb(18, 20, 22) 90%, rgb(30, 34, 47) 100%);
-    ;
     margin: 0;
     padding-top: 60px;
 }
@@ -38,17 +35,6 @@ header h1 {
     white-space: nowrap;
     font-weight: 400;
 }
-
-/*.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #0a0a0a;
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    z-index: 1000;
-}*/
 
 header nav ul {
     list-style: none;
@@ -99,10 +85,6 @@ section {
     background: linear-gradient(150deg, #00e1ff, #ff00ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    /*white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;*/
 }
 
 .sobre-texto p {
@@ -122,11 +104,6 @@ section {
     flex: 1 1 350px;
     display: flex;
     justify-content: center;
-    /*position: relative;
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    align-items: center;*/
     animation: flutuando 3s ease-in-out infinite;
     transform: rotate(45deg);
 }
@@ -167,7 +144,7 @@ h2 {
     -webkit-text-fill-color: transparent;
     font-size: 2.5rem;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: 100;
+    font-weight: 500;
     position: relative;
     right: 40px;
 }
@@ -241,39 +218,10 @@ h2 {
     transform: scale(1.1);
 }
 
-/*.habilidades .icones-logotipo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    max-width: 550px;
-    margin: 0 auto;
-}
-
-.habilidades .icones-logotipo img {
-    width: 70px;
-    height: 60px;
-    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.1));
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.habilidades .icones-logotipo img:hover {
-    transform: scale(1.2);
-    filter: drop-shadow(0 0 10px #00ccff);
-}*/
-
-/*.projeto {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 40px;
-}*/
-
 .projeto-card {
     position: relative;
     display: inline-block;
-    width: 383px;
+    width: 425px;
     height: 310px;
     overflow: hidden;
     transition: transform 0.9s;
@@ -466,17 +414,13 @@ footer {
 
     header h1 {
         font-size: 20px;
-        /* diminui o tamanho no mobile */
         margin-bottom: 30px;
         line-height: 1.2;
-        /* quebra o nome em mais de uma linha se for necessário */
     }
 
     header nav ul {
-        /* coloca os itens um abaixo do outro */
         align-items: center;
         gap: 30px;
-        /* espaço entre eles */
         padding: 0;
     }
 
@@ -507,11 +451,8 @@ footer {
 @media (max-width: 668px) {
     .sobre-texto h1 {
         font-size: 40px;
-        /* Reduz o tamanho */
         white-space: normal;
-        /* Permite quebrar só quando necessário */
         text-align: left;
-        /* Centraliza no mobile */
         width: 400px;
     }
 
@@ -530,13 +471,57 @@ footer {
     }
 
     .habilidades .icones-logotipo {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.8rem;
     }
 
     .habilidades .box {
         width: 120px;
+    }
+}
+
+@media (max-width: 570px) {
+    hr {
+        width: 625px;
+        background: #ccc;
+    }
+}
+
+@media (max-width: 970px) {
+    .contato-container {
+        position: relative;
+        right: 100px;
+    }
+
+    .section-contato {
+        position: relative;
+        right: 10px;
+    }
+
+    .section-contato input {
+        width: 310px;
+    }
+
+    .socialMedia-container {
+        position: relative;
+        right: 35px;
+        top: -25px;
+    }
+
+    .socialMedia {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 570px) {
+    footer {
+        display: flex;
+        justify-content: center;
+        width: 550px;
+    }
+
+    footer p {
+        margin: 0;
     }
 }

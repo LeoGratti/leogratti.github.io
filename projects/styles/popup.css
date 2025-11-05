@@ -1,6 +1,5 @@
 .popup {
     display: none;
-    /* Esconde inicialmente */
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -28,14 +27,6 @@
     animation: fadeIn 0.3s ease-in-out;
     position: relative;
 }
-
-/*.popup-esquerda,
-.popup-direita {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}*/
 
 .popup-esquerda {
     flex: 1 1 300px;
@@ -108,17 +99,6 @@
     font-size: 16px;
 }
 
-/*
-.botao {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10;
-    margin-top: 20px;
-    /*top: 258px;
-    right: 150px;
-*/
-
 .botao {
     display: flex;
 }
@@ -159,9 +139,6 @@
 }
 
 @media (max-width: 800px) {
-    .popup-content {
-        
-    }
 
     .popup-esquerda img {
         max-width: 85%;
@@ -175,7 +152,7 @@
         font-size: 16px;
     }
 
-    .popup-direita p, .popup-lista-tecn {
+    .popup-direita p {
         font-size: 9px;
     }
 
@@ -183,7 +160,7 @@
         font-size: 9px;
     }
 
-    .popup-lista-func {
+    .popup-lista-func, .popup-lista-tecn {
         font-size: 10px;
     }
 

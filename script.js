@@ -26,21 +26,6 @@ document.getElementById("form-contato").addEventListener("submit", async functio
     console.error("Erro ao enviar: ", erro);
     alert("Falha de conexão com o servidor");
   }
-
-  /*const texto = await response.text();
-  document.getElementById("mensagem-sucesso").textContent = texto;
-  this.reset();*/
-
-  /*if (response.ok) {
-    document.getElementById("mensagem-sucesso").textContent = "mensagem enviada com sucesso";
-    this.reset();
-  } else {
-    document.getElementById("mensagem-sucesso").textContent = "Erro ao enviar mensagem. Tente novamente";
-  }*/
-
-  /*document.getElementById("mensagem-sucesso").textContent =
-    "Mensagem enviada com sucesso! Entrarei em contato em breve.";
-  this.reset();*/
 });
 
 const sections = document.querySelectorAll("section");
